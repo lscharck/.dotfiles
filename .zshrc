@@ -89,6 +89,3 @@ export LESS="--RAW-CONTROL-CHARS"
 
 # gnupg key set
 export GPG_TTY=$(tty)
-
-# export path
-export PATH="/Users/lukescharck/.bin:$PATH"

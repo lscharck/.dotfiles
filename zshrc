@@ -83,9 +83,10 @@ export LIBRARY_PATH=/opt/homebrew/lib
 
 # Get color support for 'less'
 export LESS="--RAW-CONTROL-CHARS"
+export MANPAGER='less -s -M +Gg'
 
 # Use colors for less, man, etc.
-[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
+[[ -f ~/.config/.LESS_TERMCAP ]] && . ~/.config/.LESS_TERMCAP
 
 # gnupg key set
 export GPG_TTY=$(tty)

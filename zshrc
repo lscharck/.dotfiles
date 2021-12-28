@@ -43,12 +43,13 @@ export LANG=en_US.UTF-8
 
 #zsh autosuggest
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-ZSH_AUTOSUGGEST_USE_ASYNC='true'
-ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
+ZSH_AUTOSUGGEST_STRATEGY=(history match_prev_cmd)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#6c6c6c"
 CASE_SENSITIVE="true"
 ENABLE_CORRECTION="true"
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+ZSH_AUTOSUGGEST_COMPLETION_IGNORE="?(#c50, )"
 
 # history
 export HISTFILE=~/.zsh_history

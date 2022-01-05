@@ -24,7 +24,7 @@ yellow='\033[1;33m'
 
 #ip header
 IP=$(ifconfig en0 |grep "\<inet\>" | awk '{ print $2 }')
-eth=$(ifconfig en5 2> /dev/null |grep "\<inet\>" |awk '{ print $2 }')
+eth=$(ifconfig en5 2>&- |grep "\<inet\>" |awk '{ print $2 }')
 if [ $? != 0 ]; then
 	eth=$''
 fi

@@ -1,6 +1,7 @@
 #promt
 #PROMPT='%B%F{green}%n%f %F{green}[%f %B%F{55}%(5~|…/%3~|%~)%f%b %B%F{green}]%b%f%B%F{blue}%#%b%f '
-fpath+=$HOME/.zsh/pure
+#fpath+=$HOME/.zsh/pure
+fpath+=/opt/homebrew/share/zsh/site-functions
 autoload -U promptinit; promptinit
 PURE_GIT_PULL=0
 PURE_CMD_MAX_EXEC_TIME=10

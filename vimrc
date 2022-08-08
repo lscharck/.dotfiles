@@ -45,15 +45,15 @@ syntax enable
 filetype plugin on
 highlight BadWhitespace ctermbg=red guibg=red
 
-au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp set tabstop=4
-au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp set softtabstop=4
-au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp set shiftwidth=4
-au BufNewFile,BufRead *.py,*.pyw,*,c,.*h,*.m,*.cpp set textwidth=80
-au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp set smartindent
-au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp set expandtab
-au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp set autoindent
-au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp set fileformat=unix
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.m.*.cpp match BadWhitespace /\s\+$/
+au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp,*.hpp set tabstop=4
+au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp,*.hpp set softtabstop=4
+au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp,*.hpp set shiftwidth=4
+au BufNewFile,BufRead *.py,*.pyw,*,c,.*h,*.m,*.cpp,*.hpp set textwidth=80
+au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp,*.hpp set smartindent
+au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp,*.hpp set expandtab
+au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp,*.hpp set autoindent
+au BufNewFile,BufRead *.py,*.pyw,*.c,.*h,*.m,*.cpp,*.hpp set fileformat=unix
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h,*.m.*.cpp,*.hpp match BadWhitespace /\s\+$/
 au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 au BufWritePost * if getline(1) =~ "^#!" | if getline(1) =~ "/bin/" | silent !chmod +x <afile> | endif | endif
 

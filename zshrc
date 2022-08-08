@@ -80,8 +80,8 @@ bindkey "^[[B" history-beginning-search-forward-end
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 #add homebrew libraries
-export CPATH=/opt/homebrew/include
-export LIBRARY_PATH=/opt/homebrew/lib
+#export CPATH="$LIBRARY_PATH:$(brew --prefix)/include"
+#export LD_LIBRARY_PATH="$LIBRARY_PATH:$(brew --prefix)/lib"
 
 # Get color support for 'less'
 export LESS="--RAW-CONTROL-CHARS"
